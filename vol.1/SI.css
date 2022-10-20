@@ -1,0 +1,743 @@
+body {
+  height: auto;
+  width: 100%;
+  margin: 0;
+  background-color: rgb(200, 183, 161);
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/*  ヘッダー  */
+
+header {
+  height: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.8);
+  margin: 0;
+  font-family: "Helvetica Neue", Helvetica, Arial, "游ゴシック", YuGothic,
+    "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo,
+    sans-serif;
+
+  position: fixed;
+  top: 0;
+  z-index: 900;
+}
+
+
+h1 {
+  font-size: 40px;
+  margin-left: 30px;
+  color: black;
+}
+
+nav ul {
+  display: flex;
+  text-decoration: none;
+  margin: 0;
+}
+
+nav li {
+  display: flex;
+  text-decoration: none;
+  padding: 10px 40px;
+  font-size: 25px;
+}
+
+.hoverbutton {
+  color: rgb(196, 161, 115);
+  text-decoration: none;
+}
+
+/*  スライド  */
+/*  画像部分のボックス  */
+.menu {
+  max-width: 100%;
+  height: 100%;
+  overflow: hidden;
+
+  margin: auto;
+}
+
+/*  背景指定  */
+
+.menu .Img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  animation: bgAnime 25s infinite; /* 4画像 × 各5s = 20s */
+
+  background-size: contain;
+  width: 100%;
+  height: 1100px;
+  background-repeat: no-repeat;
+
+  /*margin: 100px 0px 0px ;*/
+  z-index: -1;
+}
+.box-img{
+  width: 100%;
+}
+.title-SI{
+  margin: 400px 450px;
+  font-size: 50px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.8);
+
+}
+
+/*  画像とアニメーション  */
+
+.menu .src1 {
+  background-image: url(./IMG_0898.jpeg); /* 背景の画像を指定 */
+}
+.menu .src2 {
+  background-image: url(./IMG_1018.JPG); /* 背景の画像を指定 */
+  animation-delay: 5s;
+}
+.menu .src3 {
+  background-image: url(./IMG_4016.jpeg); /* 背景の画像を指定 */
+  animation-delay: 10s;
+}
+.menu .src4 {
+  background-image: url(./IMG_4223.jpeg); /* 背景の画像を指定 */
+  animation-delay: 15s;
+}
+.menu .src5 {
+  background-image: url(./IMG_8970.jpeg);
+  animation-delay: 20s;
+}
+
+@keyframes bgAnime {
+  0% {
+    opacity: 0;
+  }
+  5% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 1;
+  }
+  30% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+/*  文章  */
+
+.main_content {
+  width: 100%;
+  height: 11000px;
+  margin: 1000px 0px 0px;
+  z-index: 3;
+}
+.title-1 {
+  font-size: 50px;
+  /*font-weight: 700;*/
+  text-align: center;
+  margin: 30px 200px;
+
+  padding: 1rem 6rem;
+  border-top: 3px solid #000;
+  border-bottom: 3px solid #000;
+}
+
+/*  name  */
+.subtitle-name {
+  font-size: 35px;
+  /*text-align: center;*/
+  margin: 0px 50px 0px 50px;
+  padding: 24.5px;
+  border-left: 6px double #000;
+}
+.subtitle-photo{
+  font-size: 35px;
+  /*text-align: center;*/
+  margin: 0px 50px 0px 50px;
+  padding: 30px;
+  border-left: 6px double #000;
+
+}
+.subtitle-hobby{
+  font-size: 35px;
+  /*text-align: center;*/
+  margin: 0px 50px 0px 50px;
+  padding: 30px;
+  border-left: 6px double #000;
+
+}
+.subtitle-topic{
+  font-size: 35px;
+  /*text-align: center;*/
+  margin: 0px 50px 0px 50px;
+  padding: 30px;
+  border-left: 6px double #000;
+
+}
+.box-name{
+  width: 1380px;
+  height: 140px;
+  margin: 20px auto;
+  background-color: white;
+}
+.box-name2{
+  width: 1380px;
+  height: 600px;
+  margin: 0 auto;
+  padding: 70px 0px;
+  background-color: white;
+  border-radius: 20px;
+}
+.box-name22{
+  width: 1380px;
+  height: 900px;
+  margin: 0 auto;
+  padding: 70px 0px;
+  background-color: white;
+  border-radius: 20px;
+}
+
+.box-margin{
+  height: 20px;
+}
+.name-1 {
+  font-size: 45px;
+  margin: 60px 150px 60px;
+  display: inline;
+  background-image: linear-gradient(
+    rgba(0, 0, 0, 0) 70%,
+    rgb(0, 255, 0, 0.6) 70%
+  );
+}
+.name-11{
+  /*width: 1380px;
+  height: 80px;*/
+  font-size: 45px;
+  margin: 60px 60px;
+  display: inline;
+  background-image: linear-gradient(
+    rgba(0, 0, 0, 0) 70%,
+    rgb(0, 255, 0, 0.6) 70%
+    );
+  }
+  .TextTyping {
+    font-size: 40px;
+    text-align: center;
+    margin: 40px 0px;
+    width: 920px;
+    
+  }
+  .sen-1 {
+    font-size: 30px;
+    text-align: center;
+    margin: 40px 0px;
+  }
+  .big {
+    font-size: 40px;
+  }
+
+  /*----photoのコメントアウトまでマーカーアニメーション---*/
+  /*  marker  */
+  .sample2b {
+    display: inline-block;
+    position: relative;
+  }
+  .sample2b span {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: linear-gradient(
+      transparent 40%,
+      rgba(0, 255, 0, 0.6) 60%
+      ); /* ラインマーカーを付ける  */
+      animation: sample2bAnime 3s ease-in infinite; /* アニメ */
+    }
+    
+    @keyframes sample2bAnime {
+      0% {
+        right: 100%;
+      } /* 点滅開始色        */
+      25% {
+        right: 0;
+      } /* 点滅終了色        */
+      100% {
+        right: 0;
+      } /* 点滅終了色        */
+    }
+    
+    /*  ここからPhoto */
+    .main_content2 {
+      width: 100%;
+      height: 100px;
+    }
+    .box-slider{
+      width: 1380px;
+      height: 600px;
+      padding: 30px 0px 0px 0px;
+    }
+    .slider .Img{
+      width: 600px;
+      height: 450px;
+    }
+    .slick-dots .li{
+      width: 16px;
+      height: 16px;
+    }
+    
+    /*  Hobby */
+    /*  GAME  */
+    .main_content3 {
+      width: 100%;
+      height: 5000px;
+    }
+    .box-0{
+      width: 1380px;
+      height: 7380px;
+      margin: 0 auto;
+      border-radius: 20px 20px 20px 20px;
+    }
+    .box-1 {
+      width: 1380px;
+      height: 3350px;
+      margin: 0 auto;
+      padding: 30px 0px 0px 0px;
+      background-color: white;
+      border-radius: 20px 20px 0px 0px;
+    }
+    .box-1-2 {
+      width: 1180px;
+      height: 400px;
+      display: flex;
+      margin: 50px auto;
+    }
+    .box-1-2-3 {
+      width: 1180px;
+      height: 900px;
+      text-align: center;
+      margin: 0 auto;
+    }
+    .box-2 {
+      width: 600px;
+      height: 270px;
+      padding: 0px 100px;
+      text-align: center;
+    }
+    
+    .photo-anim1 {
+      width: 480px;
+      height: 270px;
+      margin: 0;
+    }
+    /*--ゲームタイトルの見出しデザイン--*/
+    .name-2 {
+      font-size: 45px;
+      width: 600px;
+      height: 50px;
+      margin: 0;
+      position: relative;
+      line-height: 1.4;
+      padding: 0.25em 1em;
+    }
+    .name-2:before,
+    .name-2:after {
+      content: "";
+      width: 20px;
+      height: 30px;
+      position: absolute;
+      display: inline-block;
+    }
+    
+    .name-2:before {
+      border-left: solid 1px black;
+      border-top: solid 1px black;
+      top: 0;
+      left: 0;
+    }
+    
+    .name-2:after {
+      border-right: solid 1px black;
+      border-bottom: solid 1px black;
+      bottom: 0;
+      right: 0;
+    }
+    .sen-2 {
+      font-size: 30px;
+      margin: 20px 0px;
+    }
+    .box-1-3 {
+      width: 1000px;
+      height: 400px;
+      display: flex;
+    }
+    
+    /*  動画  */
+    .name-mondo {
+      width: 1180px;
+      height: 80px;
+      font-size: 40px;
+      margin: 0 ;
+      display: inline;
+      background-image: linear-gradient(
+        rgba(0, 0, 0, 0) 70%,
+        rgb(0, 255, 0, 0.6) 70%
+        );
+      }
+      .sen-mondo {
+        font-size: 30px;
+        margin: 20px 0px;
+      }
+      
+      /*  music  */
+      .main-content4 {
+        width: 1380px;
+        height: 4000px;
+        margin: 0px auto 20px;
+        background-color: white;
+        border-radius: 0px 0px 20px 20px;
+      }
+      .box-4 {
+        width: 420px;
+        height: 700px;
+        text-align: center;
+      }
+      .photo-box1,.photo-box2{
+        margin: 0 auto;
+      }
+      .photo-anim2 {
+        width: 300px;
+        height: 500px;
+      }
+      .photo-anim3 {
+        width: 420px;
+        height: 700px;
+        border-radius: 10px;
+      }
+      
+      .photo-anim4 {
+        width: 300px;
+        height: 500px;
+      }
+      .name-3 {
+        font-size: 45px;
+        text-align: center;
+        margin: 30px auto;
+        padding: 20px 0px 20px 0px;
+      }
+      .box-omoinotake {
+        display: flex;
+        height: 750px;
+      }
+      .start-1,
+      .start-2 {
+        width: 140px;
+        height: 100px;
+        font-size: 75px;
+        margin-top: 300px;
+        margin-bottom: 400px;
+        text-align: center;
+      }
+      .start-1 {
+        transform: scale(-1, 1);
+      }
+      
+      .photo-anim2,
+      .photo-anim4 {
+        margin: 100px auto;
+        border-radius: 8px;
+      }
+      
+      .box-comment {
+        margin: 0px 0px 400px 0px;
+      }
+      .sen-music {
+        text-align: center;
+        font-size: 40px;
+        margin: 15px 0px;
+      }
+      .sen-music-2 {
+        text-align: center;
+        font-size: 25px;
+      }
+      /*  on カーソル反応のhover */
+      
+      .photo-anim2{display:inline-block;transition:transform .3s;cursor:pointer}
+      .photo-anim2:hover{transform:scale(1.1)}
+      .photo-anim4{display:inline-block;transition:transform .3s;cursor:pointer}
+      .photo-anim4:hover{transform:scale(1.1)}
+      i{
+        display:inline-block;transition:transform .3s;cursor:pointer
+      }
+      i:hover{transform:scale(1.1)}
+      /*----ふわふわCSSアニメーション-------------------------*/
+      .photo-anim3{
+        animation: fuwafuwa 2s infinite;
+      }
+      @keyframes fuwafuwa {
+        0% {
+          transform: translateY(0px);
+        }
+        50% {
+          transform: translateY(-30px);
+        }
+        100% {
+          transform: translateY(0px);
+        }
+      }
+      
+      /*  topic */
+      .box-group{
+        width: 1380px;
+        height: 1000px;
+        margin: 0 auto;
+        padding: 70px 0px;
+        background-color: white;
+        border-radius: 20px;
+      }
+      .box-typing{
+        height: 280px;
+        width: 1380px;
+        padding: 0px 220px;
+      }
+      .box-con{
+        margin: 0 auto;
+        width: 800px;
+        height: 450px;
+        text-align: center;
+      }
+      .name-ima{
+        font-size: 55px;
+        margin: 60px 120px;
+        display: inline;
+        background-image: linear-gradient(
+          rgba(0, 0, 0, 0) 70%,
+          rgb(0, 255, 0, 0.6) 70%
+        );
+      }
+      
+      /*  footer  */
+      /*footer{
+        position: absolute;
+        width: 100%;
+        height: 150px;
+        background-color: rgb(196, 161, 115);
+        z-index: 999;
+      }*/
+      
+      /*--  Shadow  --*/
+      
+      .photo-anim2,
+      .photo-anim3,
+      .photo-anim4 {
+  box-shadow: 4px 4px 15px;
+}
+.box-0,.box-name,.box-name2,.box-name22,.box-photo,.box-hobby,.box-topic,.box-group{
+  box-shadow: 0 0 25px 10px gray;
+}
+
+/* BORDER レイアウト確認用boxborder---
+.box-0{
+  border: 5px solid rgb(255, 0, 43);
+}
+.main_content3 {
+  border: 5px solid blue;
+}
+.box-1 {
+  border: 8px outset rgb(0, 0, 0);
+}
+.box-1-2 {
+  border: 5px solid purple;
+}
+.box-1-2-3 {
+  border: 5px solid blue;
+}
+.box-2 {
+  border: 5px solid pink;
+}
+.photo-anim1 {
+  border: 5px solid blue;
+}
+.name-2 {
+  border: 5px solid yellow;
+}
+.box-1-3 {
+  border: 5px solid yellow;
+}
+.main-content4 {
+  border: 5px solid yellow;
+}
+.box-4 {
+  border: 5px solid blue;
+}
+.box-omoinotake {
+  border: 5px solid green;
+}
+.box-comment {
+  border: 5px solid red;
+}
+.photo-anim2,
+.photo-anim3,
+.photo-anim4 {
+  border: 5px solid yellow;
+}*/
+
+.drop {
+  /* Border */
+
+  /* Reset list styles */
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.drop li {
+  /* Spacing */
+  padding: 8px;
+  margin: 0 40px;
+  /* Used to position the sub dropdown */
+  position: relative;
+}
+
+/* The sub dropdown */
+.drop ul {
+  /* Border */
+  background-color: rgba(255, 255, 255, 0.8);
+  margin: 0px ;
+  padding: 0;
+  /* Hidden by default */
+  display: none;
+
+  /* Absolute position */
+  left: 0;
+  position: absolute;
+  top: 100%;
+
+  /* Reset styles */
+  /*list-style-type: none;
+  margin: 0;
+  padding: 0;*/
+
+  /* Width */
+  width: 200px;
+}
+
+/* The second level sub dropdown */
+.drop ul ul {
+  left: 100%;
+  position: absolute;
+  top: 0;
+}
+.drop li:hover {
+
+}
+
+/* Show the direct sub dropdown when hovering the list item */
+.drop li:hover > ul {
+  display: block;
+}
+
+/*  typing  */
+.TextTyping span {
+	display: none;
+}
+
+/*文字列後ろの線の設定*/
+.TextTyping::after {
+  content: "|";
+	animation: typinganime .8s ease infinite;
+}
+
+@keyframes typinganime{
+	from{opacity:0}
+	to{opacity:1}
+}
+
+/*  photo */
+
+
+/*==================================================
+スライダーのためのcss
+===================================*/
+.slider {/*横幅94%で左右に余白を持たせて中央寄せ*/
+  width:94%;
+  margin:0 auto;
+}
+
+.slider img {
+  width:60vw;/*スライダー内の画像を60vwにしてレスポンシブ化*/
+  height:auto;
+}
+
+.slider .slick-slide {
+transform: scale(0.8);/*左右の画像のサイズを80%に*/
+transition: all .5s;/*拡大や透過のアニメーションを0.5秒で行う*/
+opacity: 0.5;/*透過50%*/
+}
+
+.slider .slick-slide.slick-center{
+transform: scale(1);/*中央の画像のサイズだけ等倍に*/
+opacity: 1;/*透過なし*/
+}
+
+
+/*矢印の設定*/
+
+/*戻る、次へ矢印の位置*/
+.slick-prev, 
+.slick-next {
+  position: absolute;/*絶対配置にする*/
+  top: 42%;
+  cursor: pointer;/*マウスカーソルを指マークに*/
+  outline: none;/*クリックをしたら出てくる枠線を消す*/
+  border-top: 2px solid #666;/*矢印の色*/
+  border-right: 2px solid #666;/*矢印の色*/
+  height: 15px;
+  width: 15px;
+}
+
+.slick-prev {/*戻る矢印の位置と形状*/
+  left: -1.5%;
+  transform: rotate(-135deg);
+}
+
+.slick-next {/*次へ矢印の位置と形状*/
+  right: -1.5%;
+  transform: rotate(45deg);
+}
+
+/*ドットナビゲーションの設定*/
+
+.slick-dots {
+  text-align:center;
+margin:20px 0 0 0;
+}
+
+.slick-dots li {
+  display:inline-block;
+margin:0 5px;
+}
+
+.slick-dots button {
+  color: transparent;
+  outline: none;
+  width:8px;/*ドットボタンのサイズ*/
+  height:8px;/*ドットボタンのサイズ*/
+  display:block;
+  border-radius:50%;
+  background:#ccc;/*ドットボタンの色*/
+}
+
+.slick-dots .slick-active button{
+  background:#333;/*ドットボタンの現在地表示の色*/
+}
+
